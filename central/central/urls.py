@@ -19,5 +19,5 @@ from paciente import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('/', views.createPaciente, name='criarPaciente'),
+    path('das/', views.createPaciente, name='criarPaciente'),
 ]

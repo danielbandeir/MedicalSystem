@@ -4,11 +4,10 @@ from .models import paciente
 
 
 def createPaciente(request):
+        
+    form = pacienteForm(request.POST or None)
 
-    if request.method == 'POST':
-        form = pacienteForm()
+    if form.is_valid():
+        form.save()
 
-        if form.is_valid():
-            form.save()
-
-    return render(request, 'criarPaciente.html', {form : 'form'})
+    return render(request, 'criarPaciente.html', {'form' : form})
