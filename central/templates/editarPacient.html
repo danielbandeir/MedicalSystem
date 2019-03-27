@@ -1,0 +1,64 @@
+{% extends "base.html" %}
+{% block name_title %}Editar paciente{% endblock %}
+{% load static %}
+{% block link_css %}
+<link type="text/css" rel="stylesheet" href="{% static "css/criarPaciente.css" %}"
+{% endblock %}
+
+{% block content %}
+
+    {% include 'nav.html' %}
+
+    <form method="post" class="container">
+        {% csrf_token %}
+        <h4>Dados do paciente</h4>
+        <div class="divider"></div>
+        <div class="row">
+            <div class="col s12">
+                <label for="id_Nome">Nome paciente</label>
+                {{ form.Nome }}
+            </div>
+            <div class="col m4 s6">
+                <label for="id_rg">RG</label>
+                {{ form.rg }}
+            </div>
+            <div class="col m4 s6">
+                <label for="id_cpf">CPF</label>
+                {{ form.cpf }}
+            </div>
+            <div class="col m4 s6">
+                <label for="id_celular">Celular</label>
+                {{ form.celular }}
+            </div>
+            <div class="col m4 s6">
+                <label for="id_telefone">Telefone (opcional)</label>
+                {{ form.telefone }}
+            </div>
+            <div class="col m4 s6">
+                <label for="id_sangue">Tipo sanguíneo (opcional)</label>
+                {{ form.sangue }}
+            </div>
+            <div class="col m4 s6">                
+                <label for="id_email">E-mail</label>
+                {{ form.email }}
+            </div>
+        </div>
+        <h4>Localização</h4>
+        <div class="divider"></div>
+        <div class="row">
+            <div class="col m12 s12">                
+                <label for="id_endereco">Endereço</label>
+                {{ form.endereco }}
+            </div>
+            <div class="col s6">                
+                <label for="id_cidade">Cidade</label>
+                {{ form.cidade }}
+            </div>
+            <div class="col s6">                
+                <label for="id_estado">Estado</label>
+                {{ form.estado }}
+            </div>
+        </div>
+        <input type="submit" value="cadastrar" class="waves-effect waves-light btn-large" style="width:100%; color:white;">
+    </form>
+{% endblock %}

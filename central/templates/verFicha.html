@@ -1,0 +1,56 @@
+{% extends "base.html" %}
+{% block name_title %}Buscar paciente{% endblock %}
+{% load static %}
+{% block link_css %}
+{% endblock %}
+
+{% block content %}
+{% include 'nav.html' %}
+
+<div class="container" style="margin-top:25px">
+    {% for atendimento in atendimentos %}
+      <div class="card-panel teal z-depth-4">
+          <span class="white-text">
+          <span style="font-size:16px">Médico: {{ atendimento.nomeMedico }}</span><br>
+          <span style="font-size:16px">Data: {{ atendimento.data }}</span><br>
+          <span style="font-size:16px">Hora: {{ atendimento.hora }}</span> <br>
+          <span style="font-size:16px">Descrição: {{ atendimento.descricao }}</span>
+          </span>
+      </div>
+    {% endfor %}
+</div>
+
+<a class="modal-trigger btn-floating btn-large waves-effect waves-light green" style="position:fixed; right:20px; bottom: 20px;" href="#modal1"><i class="material-icons">add</i></a>
+
+  <div id="modal1" class="modal">
+    <div class="modal-content">
+      <h5>Adicionar atendimento</h5>
+    </div>
+    {% for pessoa in pessoas %}
+    <form action="{% url 'adicionarAtendimento' pessoa.id %}" method="post" class="container">
+  
+    {% csrf_token %}
+      <div class="col s12">
+        <label for="id_Nome">Nome do médico</label>
+          {{ form.nomeMedico }}
+      </div>
+      <div class="col s12">
+        <label for="id_Nome">Data</label>
+          {{ form.data }}
+      </div>
+      <div class="col s12">
+        <label for="id_Nome">Hora</label>
+          {{ form.hora }}
+      </div>
+      <div class="col s12">
+        <label for="id_Nome">Descrição</label>
+          {{ form.descricao }}
+      </div>
+        <div class="modal-footer">
+            <input type="submit" value="Adicionar" class="btn">
+        </div>
+    </form>
+    {% endfor %}
+  </div>
+
+{% endblock %}

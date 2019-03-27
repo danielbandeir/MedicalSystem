@@ -109,7 +109,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'pt-br'
 
-TIME_ZONE = 'America/Sao_Paulo'
+TIME_ZONE = 'America/Recife'
 
 USE_I18N = True
 
@@ -126,3 +126,6 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS =[
     os.path.join(BASE_DIR, "static"),
 ]
+
+LOGIN_URL = '/'
+LOGIN_REDIRECT_URL="/dashboard"
