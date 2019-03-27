@@ -11,6 +11,7 @@ def createMedico(request):
 
     if form.is_valid():
         form.save()
+        return redirect('/medico/adicionar/')
     
 
     return render(request, 'criarMedico.html', {'form': form})
@@ -42,8 +43,10 @@ def editarMedi(request,pk):
 
     if request.method == "POST":
         form = medicoForm(request.POST, instance=medic)
+        print('entroi')
         if form.is_valid():
             form.save()
+            print('salvou')
             return redirect("/medico/buscar/")
     else:
         form = medicoForm(instance=medic)

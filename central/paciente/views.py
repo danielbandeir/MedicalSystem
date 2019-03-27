@@ -11,6 +11,7 @@ def createPaciente(request):
 
     if form.is_valid():
         form.save()
+        return redirect('/paciente/criar/')
 
     return render(request, 'criarPaciente.html', {'form' : form})
 

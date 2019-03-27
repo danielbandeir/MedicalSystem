@@ -1,4 +1,5 @@
 from django.shortcuts import render, redirect
+from django.http import HttpResponseRedirect
 from .forms import agendaForm
 from .models import agenda
 from datetime import date
@@ -11,6 +12,7 @@ def agendar(request):
 
     if form.is_valid():
         form.save()
+        return redirect('/agenda/agendar/')
 
     return render(request, "agendar.html", {'form':form})
 

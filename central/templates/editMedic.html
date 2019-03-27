@@ -25,6 +25,10 @@
                 {{ form.crm }}
             </div>
             <div class="col m4 s6">
+                <label for="id_cpf">RG</label>
+                {{ form.rg }}
+            </div>
+            <div class="col m4 s6">
                 <label for="id_cpf">CPF</label>
                 {{ form.cpf }}
             </div>
@@ -61,6 +65,6 @@
                 {{ form.estado }}
             </div>
         </div>
-        <input type="submit" value="cadastrar" style="color:white; width:100%">
+        <input type="submit" value="Editar">
     </form>
 {% endblock %}

@@ -6,7 +6,7 @@ import datetime
 class agenda(models.Model):
     nomeMedico = models.ForeignKey(medico, blank=True, null=True, on_delete=models.SET_NULL)
     nomePaciente = models.ForeignKey(paciente, on_delete=models.CASCADE)
-    especializacao = models.ForeignKey(especializacao, null=True, blank=True, on_delete=models.CASCADE)
+    especializacao = models.ForeignKey(especializacao, null=True, blank=True, on_delete=models.SET_NULL)
     data = models.DateField()
     hora = models.TimeField()
 
