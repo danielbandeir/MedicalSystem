@@ -2,6 +2,14 @@
 
 Hi, my name is Daniel :wave: and I developed this open-source medical system that create multiples datasheet, to medicals and patients, and have a scheduling system too. =D
 
+## Showcase
+
+#### Dashboard
+
+<p align="center">
+<img width="460" height="250" src="./imagesToShow/dashboard.PNG">
+</p>
+
 ## Understand the structure folder
 
 In this structure you have the central and the requirements, in central you have all the modules, database model, templates, you have all the projects rs, and requirements is where you go found the rigth libs to run the project.
