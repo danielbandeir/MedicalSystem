@@ -1,6 +1,6 @@
 # Medical System
 
-Hi, my name Is Daniel and I developed this open-source medical system that create multiples datasheet, to medicals and patients, and have a scheduling system too. =D
+Hi, my name Is Daniel :wave: and I developed this open-source medical system that create multiples datasheet, to medicals and patients, and have a scheduling system too. =D
 
 ## Understand the structure folder
 
@@ -37,7 +37,7 @@ First of all you have to do this commands to create the local virtual environmen
 pip install virtualenvironment
 ```
 
-WARNING: FOR USE PIP YOU NEED THE PYTHON INSTALLED IN YOUR LOCAL MACHINE
+**WARNING: IN THIS STEP FOR USE PIP YOU NEED THE PYTHON INSTALLED IN YOUR LOCAL MACHINE**
 
 After crate the virtual environment and names him, you run this command to install requirements with virtual environment actived:
 
