@@ -9,7 +9,14 @@ Hi, my name is Daniel :wave: and I developed this open-source medical system tha
 <p align="center">
     <img width="460" height="250" src="./imagesToShow/dashboard.PNG">
     <img width="150" height="250" src="./imagesToShow/seeMobile.PNG">
-    <img width="460" height="250" src="./imagesToShow/menuSeeMobile.PNG">
+    <img width="150" height="250" src="./imagesToShow/menuSeeMobile.PNG">
+</p>
+
+#### Functions
+
+<p align="center">
+    <img width="460" height="250" src="./imagesToShow/dataMedico.PNG">
+    <img width="460" height="250" src="./imagesToShow/especialidade.PNG">
 </p>
 
 ## Understand the structure folder
