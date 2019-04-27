@@ -1,6 +1,6 @@
 # Medical System
 
-Hi, my name Is Daniel :wave: and I developed this open-source medical system that create multiples datasheet, to medicals and patients, and have a scheduling system too. =D
+Hi, my name is Daniel :wave: and I developed this open-source medical system that create multiples datasheet, to medicals and patients, and have a scheduling system too. =D
 
 ## Understand the structure folder
 
