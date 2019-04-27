@@ -1,0 +1,14 @@
+dj-database-url==0.5.0
+Django==2.1.7
+django-heroku==0.3.1
+gunicorn==19.9.0
+Pillow==6.0.0
+psycopg2==2.7.7
+PyAutoGUI==0.9.42
+PyGetWindow==0.0.4
+PyMsgBox==1.0.6
+PyRect==0.1.4
+PyScreeze==0.1.20
+PyTweening==1.0.3
+pytz==2018.9
+whitenoise==4.1.2
