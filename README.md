@@ -62,5 +62,20 @@ After crate the virtual environment and names him, you run this command to insta
 pip install -r requirements.txt
 ```
 
+## Login
+
+By default the login and password for system is:
+
+```
+login: admin
+password: admin
+```
+
+If you want to create a new user for acess the /admin page, you have to run this command to create your own login
+
+```
+python manage.py createsuperuser
+```
+
 ### Let's go to work! =D
 
