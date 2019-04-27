@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="{% static "css/materialize.min.css" %}">
+    <link rel="stylesheet" type="text/css" href="{% static "css/base.css" %}">
+    <title>
+    {% block name_title %}{% endblock %}
+    </title>
+    {% block link_css %}{% endblock %}
+</head>
+<body>
+
+    {% block content %}{% endblock %}
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="{% static "js/materialize.min.js" %}"></script>
+    <script>
+    $(document).ready(function(){
+        $('.sidenav').sidenav();
+        $('select').formSelect();
+        $(".dropdown-trigger").dropdown();
+        $('.modal').modal();
+        $('.datepicker').datepicker({
+            format: 'dd/mm/yyyy',
+                i18n: {
+                months: ["Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho", "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro"],
+                monthsShort: ["Jan", "Feb", "Mar", "Abr", "Mai", "Jun", "Jul", "Ago", "Set", "Oct", "Nov", "Dez"],
+                weekdays: ["Domingo","Segunda", "Terça", "Quart", "Quinta", "Sexta", "Sábado"],
+                weekdaysShort: ["Dom","Seg", "Ter", "Qua", "Qui", "Sex", "Sab"],
+                weekdaysAbbrev: ["D","S", "T", "Q", "Q", "S", "S"]
+            }
+        });
+    });
+    </script>
+    {% block link_js %}{% endblock %} 
+</body>
+</html>
