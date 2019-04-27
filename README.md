@@ -62,6 +62,16 @@ After crate the virtual environment and names him, you run this command to insta
 pip install -r requirements.txt
 ```
 
+## Running
+
+For acess the system in your local machine you have to run runserver, in your structure folder run:
+
+```
+python manage.py runserver
+```
+
+Now you can acess the system in localhost:8000, or 127.0.0.1:8000/
+
 ## Login
 
 By default the login and password for system is:
